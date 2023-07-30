@@ -1,0 +1,433 @@
+/* App.css */
+.app{
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  max-height: 1867px;
+}
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+}
+h1 {
+  text-align: center;
+}
+
+.athletes-section {
+  margin-bottom: 30px;
+}
+
+.athlete {
+  text-align: left;
+  /* margin: 10px; */
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+.athlete-title-content-right {
+  font-size: 85px;
+  color: rgba(231, 231, 231, 1);
+  margin-right: 50%;
+  padding-left: 15%;
+}
+
+.athlete-title-content-left {
+  font-size: 85px;
+  color: rgba(231, 231, 231, 1);
+  margin: 0 50% 0;
+}
+
+.content-1{
+  background: #FFF;
+}
+.content-2{
+  background: #F5F4F9;
+}
+.content-3-content-left  {
+  background: #5E3DB3;
+  .number{
+    color: #000 !important;
+  }
+  .number::after {
+    background: #FFF !important;
+  }
+  .athlete-text{
+    color: #fff;
+  }
+}
+.content-3-content-right{
+  background: #090C35;
+  .number{
+    color: #8F6BE8 !important;
+  }
+  .number::after {
+    background: #FFF !important;
+  }
+  .athlete-text{
+    color: #fff;
+  }
+}
+.athlete-header {
+  color: #C2C2C2;
+  font-size: 36px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  .number{
+    bottom: 10px;
+    color: #000 ;
+  font-family: Roboto;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block; /* ให้ element เป็นพื้นที่แบบ inline-block */
+  position: relative; /* กำหนดตำแหน่งของ underline */
+  }
+  .number::after {
+    content: ''; /* ต้องมี content ไม่ว่างเพื่อแสดง pseudo-element */
+    position: absolute; /* กำหนดตำแหน่งอยู่ที่พื้นหลังของ element */
+    left: 0; /* ตำแหน่งในแนวนอนของ underline */
+    width: 100%; /* กว้างของ underline เท่ากับ element ที่มี class "underline" */
+    height: 5px; /* ความสูงของ underline */
+    background: #603EBE; /* สีพื้นหลังของ underline */
+    border: 0px solid #979797;
+    border-radius: 2.5px; /* กำหนด border-radius */
+    margin-top: 25px;
+  }
+}
+
+.athlete-text{
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+
+
+.split-content {
+  /* flex-direction: row-reverse;  */
+  display: flex;
+}
+
+.content-right {
+  margin-left: 50%;
+}
+
+.content-left {
+  margin-right: 50%;
+}
+
+.content-right-desc {
+  margin-right: 50%;
+  padding-left: 10%;
+}
+
+.content-left-desc {
+  margin-left: 50%;
+  padding-right: 10%;
+}
+
+.split-content section {
+  flex: 1;
+  padding: 50px 0px 80px;
+}
+
+/* ปรับขนาด font ให้เหมาะสมกับส่วนของเนื้อหา */
+.split-content section p {
+  font-size: 20px;
+}
+
+.split-content img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%; 
+}
+.split-content .content-left-image{
+  padding: 60px 120px 0px;
+  position: absolute;
+}
+.split-content .content-right-image{
+  padding: 0 0 0 40%;
+  position: absolute;
+  margin-top: -80px;
+}
+.image-container {
+  position: relative; 
+}
+
+.image-container img {
+  width: 200px; 
+  height: 200px;
+}
+
+.image-container p {
+  position: absolute;
+  top: 50px;
+  left: 50px; 
+  font-size: 24px; 
+  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+}
+
+.split-content .split-content section:last-child {
+  padding: 20px 0px 80px !important;
+}
+
+.last .content-sec {
+  padding: 20px 0px 0px !important;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) { /*Tablets*/
+  .app{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 1024px;
+  }
+  .mobile-view {
+    display: none;
+  }
+
+  .content-left-desc {
+    margin-left: 35%;
+    padding-right: 10%;
+  }
+  .content-right-desc {
+    margin-right: 35%;
+    padding-left: 10%;
+  }
+  
+ 
+  .split-content img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%; 
+  }
+  .split-content .content-left-image{
+    padding: 80px 120px 0px;
+    position: absolute;
+    left: -15%;
+  }
+  .split-content .content-right-image{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  .athlete-title-content-right {
+    font-size: 90px;
+    color: rgba(231, 231, 231, 1);
+    margin-right: 50%;
+    padding-left: 10%;
+  }
+  .athlete-title-content-left {
+    font-size: 90px;
+    color: rgba(231, 231, 231, 1);
+    margin: 0 35% 0;
+  }
+  .split-content section {
+    flex: 1;
+    padding: 20px 0px 50px;
+  }
+}
+
+@media (max-width: 768px) {  /*Phones*/
+  .app{
+    width: 100%;
+    height: 100%;
+    max-width: 768px;
+    /* max-height: 1867px; */
+  }
+  .mobile-view {
+    .athlete-title-content-left, .athlete-title-content-right{
+      color: #E7E7E7;
+      font-family: Roboto;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0 0 0 0;
+      padding: 10% 10% 10% 10%;
+    }
+    /* Custom styles for the athlete component */
+.row {
+  justify-content: center;
+}
+
+/* Style for the athlete title */
+.athlete-title-left,
+.athlete-title-right {
+  font-size: 24px !important;
+  font-weight: bold;
+}
+
+
+/* Style for the athlete description */
+.athlete-desc {
+  text-align: center;
+}
+
+/* Style for the athlete header */
+.athlete-header {
+  font-size: 28px !important;
+  font-weight: bold;
+}
+
+.athlete-text p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content-left-desc {
+  margin-left: 5%;
+  padding: 10% 5% 10% 5%;
+}
+.content-right-desc {
+  margin-right: 5%;
+  padding: 10% 5% 10% 5%;
+}
+.image {
+  text-align-last: center;
+  text-align: center;
+}
+.image img {
+  width: 80%;
+  height: 80%;
+  /* width: 200px;
+height: 281px; */
+  /* position: absolute;
+  z-index: 1; */
+}
+.athlete-header {
+  .number{
+    bottom: 5px;
+    color: #000 ;
+  font-size: 14px !important;
+  }
+  .number::after {
+    margin-top: 20px;
+  }
+}
+
+/* Style for the athlete text */
+.athlete-text {
+  font-size: 14px;
+}
+
+/* Custom styles for the slider */
+.slick-slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider-container {
+  /* overflow: hidden; */
+  width: 100%; /* ทำให้ Slider มีความกว้างเท่ากับ 100% ของพื้นที่ที่อยู่ */
+}
+
+/* Custom styles for the slider arrows */
+.slick-dots li.slick-active button:before{
+  color: #5E3DB3 !important;
+  opacity: 1;
+}
+.slick-dots li button:before{
+  size: 15px !important;
+}
+.slick-dots
+{
+    position: absolute;
+    bottom: 5px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 15px !important;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+  }
+ 
+}
+
+
